@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elians Store 🧵 | Innovación textil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .carousel-track { display: flex; transition: transform 0.8s ease-in-out; }
+        .carousel-item { min-width: 100%; position: relative; overflow: hidden; }
+        .carousel-item img { transition: transform 1.5s ease; }
+        .carousel-item:hover img { transform: scale(1.08); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed w-full bg-black bg-opacity-90 text-white z-50 shadow-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <h1 class="text-xl font-semibold tracking-wide">Elians Store</h1>
+        <nav class="hidden md:flex space-x-6">
+            <a href="#inicio" class="hover:text-blue-400">Inicio</a>
+            <a href="#productos" class="hover:text-blue-400">Productos</a>
+            <a href="../about.php" class="hover:text-blue-400">Nosotros</a>
+            <a href="contact.php" class="hover:text-blue-400">Contacto</a>
+            <a href="../usuarios/login.php" class="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700 transition">Entrar</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <div id="menu" class="md:hidden bg-black text-white hidden flex-col space-y-3 px-6 pb-4">
+        <a href="#inicio" class="hover:text-blue-400">Inicio</a>
+        <a href="#productos" class="hover:text-blue-400">Productos</a>
+        <a href="about.php" class="hover:text-blue-400">Nosotros</a>
+        <a href="contact.php" class="hover:text-blue-400">Contacto</a>
+        <a href="../usuarios/login.php" class="bg-blue-600 px-4 py-2 rounded-md text-center hover:bg-blue-700 transition">Entrar</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="h-screen flex flex-col justify-center items-center text-center text-white bg-cover bg-center"
+         style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('assets/img/hero.jpg');">
+    <div data-aos="fade-up">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Elians Store 🧵</h1>
+        <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto">
+            Moda, tecnología y gestión textil. Unimos innovación con estilo.
+        </p>
+        <a href="#productos" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md text-lg font-semibold transition">
+            Explorar Productos
+        </a>
+    </div>
+</section>
+
+<!-- CARRUSEL DE PRODUCTOS -->
+<section id="productos" class="py-16 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10" data-aos="fade-up">Productos en Tendencia</h2>
+    <div class="relative overflow-hidden max-w-4xl mx-auto rounded-xl shadow-lg" data-aos="fade-up">
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <img src="assets/img/product1.jpg" class="w-full h-96 object-cover" alt="Producto 1">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 py-3 text-white text-lg font-semibold">Camisa Premium</div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/product2.jpg" class="w-full h-96 object-cover" alt="Producto 2">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 py-3 text-white text-lg font-semibold">Blusa Elegante</div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/product3.jpg" class="w-full h-96 object-cover" alt="Producto 3">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 py-3 text-white text-lg font-semibold">Pantalón Denim</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="py-20 bg-white">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">Productos Destacados</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up">
+            <img src="assets/img/product4.jpg" alt="Chaleco Moderno" class="w-full h-64 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Chaleco Moderno</h3>
+                <p class="text-gray-600 mb-3">Diseño versátil con materiales reciclados.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition">Ver más</button>
+            </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/product5.jpg" alt="Chaqueta Denim" class="w-full h-64 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Chaqueta Denim</h3>
+                <p class="text-gray-600 mb-3">Estilo urbano para toda ocasión.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition">Ver más</button>
+            </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/product6.jpg" alt="Polo Clásico" class="w-full h-64 object-cover">
+            <div class="p-6 text-left">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Polo Clásico</h3>
+                <p class="text-gray-600 mb-3">Comodidad y elegancia para el día a día.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition">Ver más</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-16 bg-black text-white text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+    <p class="text-gray-300 mb-6">📞 999 888 777 | ✉️ contacto@eliansstore.com</p>
+    <a href="contact.php" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md transition">Ir al formulario</a>
+</section>
+
+
+<footer class="bg-gray-900 text-gray-400 text-center py-4">
+    © <span id="year"></span> Elians Store — Innovación textil con propósito.
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('bg-opacity-100', window.scrollY > 50);
+    });
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    const track = document.querySelector('.carousel-track');
+    const items = Array.from(track.children);
+    let index = 0;
+    setInterval(() => { index = (index + 1) % items.length; track.style.transform = `translateX(-${index * 100}%)`; }, 4000);
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+body { background: #f2f2f2; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+h1, h2, h3 { color: #333; }
+.btn { border-radius: 8px; }
+.table td, .table th { vertical-align: middle; }
