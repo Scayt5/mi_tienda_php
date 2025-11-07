@@ -1,0 +1,75 @@
+# =========================================
+# 📦 DEPENDENCIAS PHP (Composer)
+# =========================================
+vendor/
+composer.lock
+
+# =========================================
+# ⚙️ CONFIGURACIONES Y VARIABLES LOCALES
+# =========================================
+.env
+.env.local
+config/config_local.php
+
+# =========================================
+# 🗂️ ARCHIVOS TEMPORALES Y LOGS
+# =========================================
+*.log
+*.cache
+*.tmp
+*.bak
+*.zip
+*.tar
+*.gz
+
+# =========================================
+# 🖼️ IMÁGENES Y SUBIDAS (para no llenar el repo)
+# =========================================
+uploads/
+storage/
+assets/img/uploads/
+assets/img/temp/
+
+# =========================================
+# 💻 ARCHIVOS DE SISTEMA
+# =========================================
+Thumbs.db
+.DS_Store
+ehthumbs.db
+desktop.ini
+
+# =========================================
+# 🧠 CONFIGURACIONES DE IDEs
+# =========================================
+.vscode/
+.idea/
+*.iml
+
+# =========================================
+# 💡 ARCHIVOS DE DESARROLLO Y TESTS
+# =========================================
+test/
+tests/
+__pycache__/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================
+# ⚡ COMPILADOS Y CACHÉ DE TAILWIND
+# =========================================
+public/css/*.map
+public/js/*.map
+*.scssc
+*.sassc
+
+# =========================================
+# 📊 REPORTES O EXPORTACIONES AUTOMÁTICAS
+# =========================================
+*.xlsx
+*.csv
+*.ods
+*.pdf
+reporte_*.*
+Reporte_*.*
